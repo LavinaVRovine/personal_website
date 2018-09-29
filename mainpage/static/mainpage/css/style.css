@@ -267,7 +267,7 @@ input:nth-child(3n){
 
 .pfblock-header-left .pfblock-line {
 	width: inherit;
-	margin: 30px 0;
+	margin: 20px 0;
 }
 
 .pfblock-title{
@@ -285,8 +285,8 @@ input:nth-child(3n){
 .pfblock-line {
 	background: rgba(135, 135, 135, 0.5);
 	width: 100px;
-	height: 1px;
-	margin: 30px auto;
+	height: 2px;
+	margin: 10px auto;
 }
 
 #myphoto {
@@ -716,6 +716,7 @@ div[class^="devicon"] span{
 .card-text {
 	height: 100px;
 	overflow: auto;
+
 }
 .grid {
 	position: relative;
@@ -778,9 +779,10 @@ div[class^="devicon"] span{
 /*---------------*/
 
 figure.effect-bubba img {
-	opacity: 0.7;
+	/*opacity: 0.7;*/
 	-webkit-transition: opacity 0.35s;
 	transition: opacity 0.35s;
+
 }
 
 figure.effect-bubba:hover img {
@@ -850,5 +852,31 @@ figure.effect-bubba:hover p {
 	margin-top: 10vh;
 	border-radius: 100%;
 	filter: grayscale(30%);
-	width: 300px;
+	/*width: 300px;*/
+
+}
+
+{
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+    flex: 33.33%;
+    padding: 40px;
+    text-align:center;
+    vertical-align: bottom;
+
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }

@@ -4,25 +4,24 @@
 <html lang="en">
 <head>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109064262-1"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-10262-1"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
 
-		gtag('config', 'UA-109064262-1');
+		gtag('config', 'UA-10-1');
 	</script>
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Portfolio webpage">
-	<meta name="author" content="Vladislav Moroshan">
+	<meta name="description" content="Personal website">
+	<meta name="author" content="Pavel Klammert">
 
 	<link type="text/css" href="https://fonts.googleapis.com/css?family=Lobster|Montserrat|Raleway" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
-
-	<link rel="shortcut icon" href="{% static 'mainpage/images/logo.ico' %}" />
-	<title>Web Developer</title>
+	<link rel="shortcut icon" href="{% static 'mainpage/images/logo_p.ico' %}" />
+	<title>Pavel Klammert</title>
 
 	<!-- CSS -->
 	<link href="{% static 'mainpage/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" media="screen">
@@ -48,9 +47,9 @@
 	<section id="home" class="pfblock-image screen-height">
     <div class="home-overlay"></div>
 		<div class="intro">
-			<div class="start">Hello, my name is Vlad Moroshan and I am</div>
-			<h1>Full-Stack Web Developer</h1>
-			<div class="start">creating modern and responsive Web Application</div>
+			<div class="start">Hello, my name is Pavel Klammert and I am</div>
+			<h1>Data analyst</h1>
+			<div class="start">obtaining insights from data via interactive visualizations.</div>
 		</div>
 
 		<a href="#services">
@@ -79,7 +78,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index.html">Vlad Moroshan</a>
+					<a class="navbar-brand" href="index.html">Pavel Klammert</a>
 				</div>
 
 				<div class="collapse navbar-collapse" id="custom-collapse">
@@ -112,9 +111,20 @@
 						<h2 class="pfblock-title">ABOUT ME</h2>
 						<div class="pfblock-line"></div>
 						<div class="pfblock-subtitle">
-							<p>I enjoy building everything from small business sites and landing pages to portfolio themes and rich interactive web apps. I love creating visually stunning and responsive websites. I always try to combine aesthetic with functional aspects, looking for the right balance to communicate without annoying.</p>
-							<p>Programming is a true passion of mine and that passion continually grows with every meaningful tech-related conversation I have, with every moment of clarity as I finally figure out a nagging issue on a project, and with every new concept, language, or framework I delve into.</p>
-							<p>I enjoy the collaborative nature of working on a team building a product. The feedback, discussion, and review in this environment brings out the best in each individual member, and is a crucial component in my own personal development. I'm ready to jump onto a supportive team and begin contributing.</p>
+
+							<p>While getting my master's degree in <a href="http://kisk.phil.muni.cz/cs">Library and Information science</a>, I've found liking in spreadsheets.
+                            For unknown reasons, I found joy in putting data into tables, writing formulas to analyze them and subsequently plotting them, with hopes of getting insights of
+                                various issues.
+                            </p>
+							<p>Since then I've became experienced data analyst working with various tools, which enables me to dig deep into the data. I like to get
+                                hands dirty (metaphorically) and make them speak.
+                            And as my learning never stops, I've lately started to move towards data science, as it enriches my capabilities.
+                            </p>
+                            <p>As I am proud <a href ="https://www.ted.com/talks/susan_cain_the_power_of_introverts">introvert</a>, i believe, that <a href ="http://www.dansilvestre.com/deep-work/">deep work</a> is a must.
+                                As such, I prefer environments, which promote this kind of work. But I also find value in collaborative work, as the feedback and review are a crucial components for ones improvement and learning.
+                             I'm ready to move on to another challenge that can enrich me.
+                            </p>
+
 
  							<a href="https://drive.google.com/file/d/0B4mqctkjXG0iclRXd2JJMGtYZFE/view?usp=sharing" target="_blank" id="resume-effect"><i class="fa fa-3x fa-file-text-o" aria-hidden="true"></i> Click to view my resume.</a>
 						</div>
@@ -123,7 +133,7 @@
 
 				<div class="col-sm-4">
 					<div class="pfblock-header wow fadeInUp">
-						<img id="myphoto" src="{% static 'mainpage/images/me.jpg' %}" alt="Vladislav Moroshan" style="border-radius: 100%;filter:grayscale(30%);">
+						<img id="myphoto" src="{% static 'mainpage/images/me.jpg' %}" alt="Pavel Klammert" style="border-radius: 100%;filter:grayscale(30%);">
 					</div>
 				</div>
 		</div><!-- .container -->
@@ -131,24 +141,33 @@
 		<div class="skills col-xs-12">
 				<h2 class="pfblock-title">MY SKILLS</h2>
 				<div class="pfblock-line"></div>
-
 				<div class="row">
-					<div  class="devicon-html5-plain  col-xs-15"><span>HTML</span></div>
-					<div  class="devicon-css3-plain   col-xs-15"><span>CSS</span></div>
-					<div  class="devicon-bootstrap-plain col-xs-15"><span>BOOTSTRAP</span></div>
-					<div  class="devicon-jquery-plain col-xs-15"><span>JQUERY</span></div>
-					<div  class="devicon-javascript-plain  col-xs-15"><span>JAVASCRIPT</span></div>
+                    <div class="column">
+                        <img id="powerbi" src="{% static 'mainpage/images/pbi.png' %}" alt="powerbi" height="128" width="128" title="PowerBI">
+                    </div>
+                    <div class="column">
+                        <img id="excel" src="{% static 'mainpage/images/excel.png' %}" alt="excel" height="128" width="128" title="Excel">
+                    </div>
+                    <div class="column">
+                        <img id="python" src="{% static 'mainpage/images/python.png' %}" alt="python" height="128" width="128" title="Python 3">
+                    </div>
 				</div>
+            <h3 class="pfblock-title">TRYING TO MASTER</h3>
 				<div class="row">
-					<div  class="devicon-d3js-plain  col-xs-15"><span>D3</span></div>
-					<div  class="devicon-react-original  col-xs-15"><span>REACT</span></div>
-					<div  class="devicon-nodejs-plain  col-xs-15"><span>NODE</span></div>
-					<div  class="devicon-python-plain  col-xs-15"><span>PYTHON</span></div>
-					<div  class="devicon-django-plain  col-xs-15"><span>DJANGO</span></div>
+                    <div class="column">
+                        <img id="scikitlearn" src="{% static 'mainpage/images/scikitlearn.png' %}" alt="scikitlearn"  height="128" width="128" title="Scikit-Learn">
+                    </div>
+                    <div class="column">
+                        <img id="mxnet" src="{% static 'mainpage/images/mxnet_logo_2.png' %}" alt="mxnet"  height="100%" width="100%" title="MXnet">
+                    </div>
+                    <div class="column">
+                        <img id="tensorflow" src="{% static 'mainpage/images/tensorflow.png' %}" alt="tensorflow"  height="128" width="128" title="Tensorflow">
+                    </div>
 				</div>
-
 			</div>
 		</div>
+
+
 	</section>
 
 	<!-- Services end -->
@@ -159,7 +178,6 @@
 	<section id="portfolio" class="pfblock">
 		<div class="container">
 			<div class="row">
-
 				<div class="col-sm-6 col-sm-offset-3">
 
 					<div class="pfblock-header wow fadeInUp">
@@ -175,7 +193,7 @@
 			</div><!-- .row -->
 
 			<div class="row">
-				{% for project in list_projects|slice:":2" %}
+				{% for project in list_projects|slice:"3" %}
 					<div class="card col-xs-12 col-sm-5 col-md-5">
 							<div class="grid wow zoomIn">
 
@@ -216,12 +234,12 @@
 				<div class="col-md-12 col-lg-12">
 					<h2 class="wow slideInRight" data-wow-delay=".1s">ARE YOU READY TO START?</h2>
 					<div class="calltoaction-decription wow slideInRight" data-wow-delay=".2s">
-						I'm available for freelance contracts, so get in touch:
+						I'm currently available for freelance contracts, so get in touch:
 					</div>
 				</div>
 
 				<div class="col-md-12 col-lg-12 calltoaction-btn wow slideInRight" data-wow-delay=".3s">
-					<a href="#contact" class="btn btn-lg">Hire Me</a>
+					<a href="#contact" class="btn btn-lg">Get in touch</a>
 				</div>
 
 			</div><!-- .row -->
@@ -270,15 +288,17 @@
 				<div class="col-sm-12">
 
 					<ul class="social-links">
-						<li><a href="https://www.linkedin.com/in/vlad-moroshan-266229129?trk=nav_responsive_tab_profile" class="wow fadeInUp" data-wow-delay=".1s" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-						<li><a href="https://github.com/VladislavMoroshan" class="wow fadeInUp" data-wow-delay=".2s" target="_blank"><i class="fa fa-github"></i></a></li>
-						<li><a href="mailto:vlad.moroshan@gmail.com" class="wow fadeInUp" data-wow-delay=".4s"><i class="fa fa-envelope"></i></a></li>
-						<li><a href="skype:moroshan777?chat" class="wow fadeInUp" data-wow-delay=".5s" target="_blank"><i class="fa fa fa-skype"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/pavel-klammert-9500046b/" class="wow fadeInUp" data-wow-delay=".1s" target="_blank" title="linkedin"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="https://github.com/LavinaVRovine" class="wow fadeInUp" data-wow-delay=".2s" target="_blank" title="github"><i class="fa fa-github"></i></a></li>
+						<li><a href="mailto:pavelklammert@gmail.com" class="wow fadeInUp" data-wow-delay=".4s" title="mail"><i class="fa fa-envelope"></i></a></li>
+						<li><a href="skype:noobzor8?chat" class="wow fadeInUp" data-wow-delay=".5s" target="_blank" title="skype"><i class="fa fa fa-skype"></i></a></li>
+                        <li><a href="https://degreed.com/lavinavrovine" class="wow fadeInUp" data-wow-delay=".5s" target="_blank" title="degreed"><i class="fa fa fa-graduation-cap"></i></a></li>
+
 					</ul>
 
 					<p class="copyright"> Feel free to email me, or visit my GitHub and LinkedIn pages.</p>
-
-					<p class="heart">Made with <span class="fa fa-heart fa-2x animated pulse"></span> Ukraine 2017 ©</p>
+                    <p class="copyright"> Original template accessible at Vlad's <a href="https://github.com/VladislavMoroshan/Django-personal-website">GitGub</a></p>
+					<p class="heart">Made with <span class="fa fa-heart fa-2x animated pulse"></span> in Brno, Czechia 2018</p>
 
 				</div>
 
