@@ -10,7 +10,7 @@ class ContactForm(forms.Form):
 
    email = forms.EmailField(label='sr-only', widget=forms.TextInput(
    attrs={'placeholder': 'E-mail', 'class': 'form-control', 'id':'c_email'}),
-   required=False)
+   required=True)
 
    message = forms.CharField(label='sr-only', widget=forms.TextInput(
    attrs={'placeholder': 'Message', 'class': 'form-control', 'id':'c_message'}))

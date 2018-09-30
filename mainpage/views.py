@@ -27,9 +27,9 @@ class ProjectListAndFormView(SuccessMessageMixin, ListView, FormView):
         cd = form.cleaned_data
         con = get_connection('django.core.mail.backends.console.EmailBackend')
         send_mail(
-            cd['name'],
-            cd['message'],
-            cd.get('email', 'noreply@example.com'),
+            "Web contact from " + cd['name'] ,
+            cd['message'] + "  from: "+ cd['email'],
+            cd['email'],
             ['pavelklammert@gmail.com'],
             fail_silently=False
         )
