@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '&cahwqh=j%ky27#js%9ji+^*fp))_b+n=rt2#ohhwt+$g4zaso'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS =  ['*']
 
@@ -128,6 +128,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # For sending emails
 EMAIL_USE_TLS = True 
 EMAIL_HOST ='smtp.gmail.com' 
-EMAIL_HOST_USER = 'your_email@gmail.com'
+EMAIL_HOST_USER = 'pavelklammert@gmail.com'
 EMAIL_HOST_PASSWORD = '*********'
 EMAIL_PORT = 587
