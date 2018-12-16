@@ -708,13 +708,14 @@ div[class^="devicon"] span{
 /*--------------------------------*/
 
 .card {
-	padding: 0px 10px 0px 5px;
-	margin: 10px 30px 10px;
+	padding: 0px 10px 0px 10px;
+	margin: 10px 15px 30px;
 	border: 1px solid lightgray;
+	width: 30%;
 }
 
 .card-text {
-	height: 100px;
+	height: 110px;
 	overflow: auto;
 
 }
@@ -919,3 +920,63 @@ figure.effect-bubba:hover p {
 	border: 1px solid rgba(255, 255, 255, .5);
 	color: rgba(255, 255, 255, .8);
 }
+
+
+/* carousel */
+.multi-item-carousel .carousel-inner > .item {
+  transition: 500ms ease-in-out left;
+}
+.multi-item-carousel .carousel-inner .active.left {
+  left: -33%;
+}
+.multi-item-carousel .carousel-inner .active.right {
+  left: 33%;
+}
+.multi-item-carousel .carousel-inner .next {
+  left: 33%;
+}
+.multi-item-carousel .carousel-inner .prev {
+  left: -33%;
+}
+@media all and (transform-3d), (-webkit-transform-3d) {
+  .multi-item-carousel .carousel-inner > .item {
+    transition: 500ms ease-in-out left;
+    transition: 500ms ease-in-out all;
+    -webkit-backface-visibility: visible;
+            backface-visibility: visible;
+    -webkit-transform: none!important;
+            transform: none!important;
+  }
+}
+
+.carousel-control{
+	position: absolute;
+	top: 40%; /* pushes the icon in the middle of the height */
+	bottom: 40%;
+	visibility: hidden;
+	z-index: 5;
+	display: inline-block;
+	background-color: white;
+
+
+
+}
+.carousel-control.left  > i{
+	background-color: #000000;
+	left: 15px;
+	visibility: visible;
+}
+.carousel-control.right  > i{
+	background-color: #000000;
+
+	right: 40px;
+	visibility: visible;
+
+}
+
+
+
+
+
+
+

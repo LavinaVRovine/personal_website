@@ -25,7 +25,8 @@
 	<title>Pavel Klammert</title>
 
 	<!-- CSS -->
-	<link href="{% static 'mainpage/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+{#	<link href="{% static 'mainpage/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" media="screen">#}
 	<link href="{% static 'mainpage/css/font-awesome.min.css' %}" rel="stylesheet" media="screen">
 	<link href="{% static 'mainpage/css/animate.css" rel="stylesheet' %}">
 
@@ -179,47 +180,85 @@
 
 	<section id="portfolio" class="pfblock">
 		<div class="container">
+         <div class="carousel slide multi-item-carousel" id="theCarousel">
 			<div class="row">
 				<div class="col-sm-6 col-sm-offset-3">
-
 					<div class="pfblock-header wow fadeInUp">
 						<h2 class="pfblock-title">My works</h2>
 						<div class="pfblock-line"></div>
-						<div class="pfblock-subtitle">
-
-						</div>
+						<div class="pfblock-subtitle"></div>
 					</div>
-
 				</div>
-
 			</div><!-- .row -->
 
-			<div class="row">
-				{% for project in list_projects|slice:"3" %}
-					<div class="card col-xs-12 col-sm-5 col-md-5">
-							<div class="grid wow zoomIn">
+              <div class="row">
+                <div class="col-md-12">
 
-								<figure class="effect-bubba"><a href="{{ project.url }}" target="_blank">
-									{% with 'mainpage/images/'|add:project.img_name as image_static %}
-											<img class="card-img-top" src="{% static image_static %}"></a>
-									{% endwith %}
-								</figure>
+                    <div class="carousel-inner">
+                        {% for project in list_projects %}
+{#                            TODO: why its not working#}
+{#                            <div class="item{% if loop.first is True %}active{% endif %}">#}
+                            <div class="item{% if  project.url == 'https://github.com/LavinaVRovine/hazard' %} active{% endif %}">
 
-								<div class="card-block">
-									<h2 class="card-title">{{ project.title }}</h2>
-									<p class="card-text">{{ project.description }}</p>
-									<div class="tools">
-										{% for tool in project.tools.split %}
-											<span>{{ tool }}</span>
-										{% endfor %}
-									</div>
-								</div>
+                                <div class="card col-xs-12 col-sm-4 col-md-4">
+                                    <div class="grid wow zoomIn">
+                                        <figure class="effect-bubba"><a href="{{ project.url }}" target="_blank">
+                                            {% with 'mainpage/images/'|add:project.img_name as image_static %}
+                                                    <img class="card-img-top" src="{% static image_static %}"></a>
+                                            {% endwith %}
+                                        </figure>
 
-							</div>
-						</div>
-					{% endfor %}
-				</div>
-		</div><!-- .contaier -->
+                                        <div class="card-block">
+                                            <h2 class="card-title">{{ project.title }}</h2>
+                                            <p class="card-text">{{ project.description }}</p>
+                                            <div class="tools">
+                                                {% for tool in project.tools.split %}
+                                                    <span>{{ tool }}</span>
+                                                {% endfor %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        {% endfor %}
+                    </div>
+                    <a class="left carousel-control hidden-xs" href="#theCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                    <a class="right carousel-control" href="#theCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+
+
+
+{#            <div class="row">#}
+{#				{% for project in list_projects|slice:"3" %}#}
+{#					<div class="card col-xs-12 col-sm-5 col-md-5">#}
+{#							<div class="grid wow zoomIn">#}
+{##}
+{#								<figure class="effect-bubba"><a href="{{ project.url }}" target="_blank">#}
+{#									{% with 'mainpage/images/'|add:project.img_name as image_static %}#}
+{#											<img class="card-img-top" src="{% static image_static %}"></a>#}
+{#									{% endwith %}#}
+{#								</figure>#}
+{##}
+{#								<div class="card-block">#}
+{#									<h2 class="card-title">{{ project.title }}</h2>#}
+{#									<p class="card-text">{{ project.description }}</p>#}
+{#									<div class="tools">#}
+{#										{% for tool in project.tools.split %}#}
+{#											<span>{{ tool }}</span>#}
+{#										{% endfor %}#}
+{#									</div>#}
+{#								</div>#}
+{##}
+{#							</div>#}
+{#						</div>#}
+{#					{% endfor %}#}
+{#				</div>#}
+{#		</div><!-- .contaier -->#}
 
 	</section>
 
