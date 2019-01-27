@@ -715,7 +715,7 @@ div[class^="devicon"] span{
 }
 
 .card-text {
-	height: 110px;
+	height: 125px;
 	overflow: auto;
 
 }
@@ -744,13 +744,18 @@ div[class^="devicon"] span{
 	min-width: 100%;
 	max-width: 100%;
 	height: auto;
-	background: #3085a3;
+
 	text-align: center;
 	cursor: pointer;
 }
 .grid img {
 	margin-right: 10px;
+	width:100%;
+	height: 179px;
+	object-fit: scale-down ;
+
 }
+
 .tools {
 	height: 60px;
 	display: inline-block;

@@ -11,6 +11,7 @@ class Project(models.Model):
     tools = models.CharField(max_length=100) # space-separated values
     pub_date = models.DateTimeField()
     img_name = models.CharField(max_length=100)
+    sort_num = models.IntegerField()
 
     def __str__(self):
         return self.title
