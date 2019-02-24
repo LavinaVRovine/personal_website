@@ -79,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
 	font-size: 30px;
-	margin: 0 0 30px;
+	margin: 0 0 10px;
 }
 
 h3 {
@@ -286,7 +286,7 @@ input:nth-child(3n){
 	background: rgba(135, 135, 135, 0.5);
 	width: 100px;
 	height: 2px;
-	margin: 10px auto;
+	margin: 5px auto;
 }
 
 #myphoto {
@@ -868,16 +868,21 @@ figure.effect-bubba:hover p {
 
 .row {
     display: flex;
+	align-items: center;
 
 }
 
 /* Create three equal columns that sits next to each other */
 .column {
     flex: 33.33%;
-    padding: 40px;
+    padding: 10px;
     text-align:center;
     vertical-align: bottom;
 
+}
+
+h3.pfblock-title{
+	padding-top: 40px;
 }
 
 /* Clearfix (clear floats) */
