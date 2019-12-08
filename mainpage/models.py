@@ -12,6 +12,7 @@ class Project(models.Model):
     pub_date = models.DateTimeField()
     img_name = models.CharField(max_length=100)
     sort_num = models.IntegerField()
+    tag = models.CharField(max_length=100)
 
     def __str__(self):
         return self.title

@@ -760,6 +760,28 @@ div[class^="devicon"] span{
 	height: 60px;
 	display: inline-block;
 }
+.project-type {
+	height: 20px;
+	display: inline-block;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.project-type > span {
+	display: inline-block;
+	background-color: #E7746F;
+	color: white;
+	margin-left: 5px;
+	padding: 3px 10px;
+	margin-bottom: 20px;
+    margin-top: 5px;
+	border-radius: 4px;
+	font: 5px, 'Raleway', sans-serif;
+}
+
+.project-type > span:hover {
+	background-color: #999;
+}
 .tools > span {
 	display: inline-block;
 	background-color: #E7746F;
