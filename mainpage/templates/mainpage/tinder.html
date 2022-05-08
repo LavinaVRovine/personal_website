@@ -1,0 +1,282 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126618105-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-126618105-1');
+	</script>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Personal website of data analyst Pavel Klammert">
+	<meta name="author" content="Pavel Klammert">
+    <meta name="seznam-wmt" content="Am9Z7PaI9ZrDASGWQJwQgAdhruzwLVB7" />
+    <meta name="robots" content="noindex">
+
+	<link type="text/css" href="https://fonts.googleapis.com/css?family=Lobster|Montserrat|Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+	<link rel="shortcut icon" href="{% static 'mainpage/images/logo_p.ico' %}" />
+	<title>Pavel Klammert</title>
+
+	<!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+{#	<link href="{% static 'mainpage/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" media="screen">#}
+	<link href="{% static 'mainpage/css/font-awesome.min.css' %}" rel="stylesheet" media="screen">
+	<link href="{% static 'mainpage/css/animate.css" rel="stylesheet' %}">
+
+	<!-- Custom styles CSS -->
+	<link href="{% static 'mainpage/css/style.css' %}" rel="stylesheet" media="screen">
+
+    <script src="{% static 'mainpage/js/modernizr.custom.js' %}"></script>
+
+</head>
+<body>
+
+	<!-- Preloader -->
+
+	<div id="preloader">
+		<div id="status"></div>
+	</div>
+
+
+
+	<!-- Navigation start -->
+
+	<header class="header">
+
+		<nav class="navbar navbar-custom" role="navigation">
+
+			<div class="container">
+
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#home">Pavel Klammert</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="custom-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#about-me">About me</a></li>
+						<li><a href="#values">My hobbies&values</a></li>
+						<li><a href="#about-you">About you</a></li>
+					</ul>
+				</div>
+
+			</div><!-- .container -->
+
+		</nav>
+
+	</header>
+
+	<!-- Navigation end -->
+
+
+  <!-- Services start -->
+
+	<section id="about-me" class="pfblock pfblock-gray">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-8">
+
+					<div class="pfblock-header wow fadeInUp">
+						<h2 class="pfblock-title">ABOUT ME</h2>
+						<div class="pfblock-line"></div>
+						<div class="pfblock-subtitle">
+                            <p>Ano, ano, jsem člověk, který si udělá page na randění, asi profesní deformace. Nechápu, že jsem sem ještě nedal reklamu...Anyway, děkuji za návštěvu.</p>
+
+                            <p>Hmm asi jsem mel vymyslet co sem napsat #TODO: finish</p>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4">
+					<div class="pfblock-header wow fadeInUp">
+						<img id="myphoto" src="{% static 'mainpage/images/me.jpg' %}" alt="Pavel Klammert" style="border-radius: 100%;filter:grayscale(30%);">
+					</div>
+				</div>
+		</div><!-- .container -->
+
+		<div class="skills col-xs-12" id="values">
+				<h2 class="pfblock-title">THINGS I LIKE</h2>
+				<div class="pfblock-line"></div>
+				<div class="row">
+
+                    <div class="column">
+                        <h3>Gym</h3>
+                        <p>OK TADY NEJAKY TEXT o mych values?</p>
+
+                    </div>
+                    <div class="column">
+                        <h3>Kolo</h3>
+                        <p>OK TADY NEJAKY TEXT o mych values?</p>
+
+                    </div>
+
+                    <div class="column">
+                        <h3>Metal</h3>
+                        <p>OK TADY NEJAKY TEXT o mych values?</p>
+
+                    </div>
+
+                    <div class="column">
+                        <h3>Cokolada</h3>
+                        <p>OK TADY NEJAKY TEXT o mych values?</p>
+
+                    </div>
+
+
+
+				</div>
+
+            <h2 class="pfblock-title">MY VALUES</h2>
+				<div class="pfblock-line"></div>
+				<div class="row">
+
+                    <div class="column">
+                        <h3>Honesty</h3>
+                        <p>OK TADY NEJAKY TEXT o mych values?</p>
+
+                    </div>
+                    <div class="column">
+                        <h3>Fairness</h3>
+                        <p>OK TADY NEJAKY TEXT o mych values?</p>
+
+                    </div>
+                    <div class="column">
+                        <h3>Freedom from</h3>
+                    <p>OK TADY NEJAKY TEXT o mych values?</p>
+
+                    </div>
+
+
+
+				</div>
+
+
+
+			</div>
+		</div>
+
+
+	</section>
+
+	<!-- Services end -->
+
+
+
+	<section id="about-you" class="pfblock pfblock-gray">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-8">
+
+					<div class="pfblock-header wow fadeInUp">
+						<h2 class="pfblock-title">ABOUT YOU</h2>
+						<div class="pfblock-line"></div>
+						<div class="pfblock-subtitle">
+
+							<p>While getting my master's degree in <a href="http://kisk.phil.muni.cz/cs">Library and Information science</a>, I've found liking in spreadsheets.
+                            For unknown reasons, I found joy in putting data into tables, writing formulas to analyze them and subsequently plotting them, with hopes of getting insights of
+                                various issues.
+                            </p>
+							<p>Since then I've became experienced data analyst working with various tools, which enables me to dig deep into the data.
+                                I prefer thorough over shallow, quality over quantity, and as such, I like to get
+                                hands dirty (metaphorically) and make the data speak.
+                            </p>
+                            <p>
+                                Jestli jsi to dočetla až sem, congratulations, now <a href="https://tinder.com/app/recs">Go back</a>
+
+                            </p>
+
+						</div>
+					</div>
+				</div>
+                <div class="col-sm-4">
+					<div class="pfblock-header wow fadeInUp">
+						<img id="dylan" src="{% static 'mainpage/images/dylan.jpg' %}" style="border-radius: 100%;filter:grayscale(30%);">
+					</div>
+				</div>
+
+
+		</div><!-- .container -->
+
+
+		</div>
+
+
+	</section>
+
+
+
+	<!-- Footer start -->
+
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-12">
+
+					<ul class="social-links">
+						<li><a href="https://www.linkedin.com/in/pavel-klammert-9500046b/" class="wow fadeInUp" data-wow-delay=".1s" target="_blank" title="linkedin"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="https://github.com/LavinaVRovine" class="wow fadeInUp" data-wow-delay=".2s" target="_blank" title="github"><i class="fa fa-github"></i></a></li>
+						<li><a href="mailto:pavelklammert@gmail.com" class="wow fadeInUp" data-wow-delay=".4s" title="mail"><i class="fa fa-envelope"></i></a></li>
+						<li><a href="skype:noobzor8?chat" class="wow fadeInUp" data-wow-delay=".5s" target="_blank" title="skype"><i class="fa fa fa-skype"></i></a></li>
+                        <li><a href="https://degreed.com/lavinavrovine" class="wow fadeInUp" data-wow-delay=".5s" target="_blank" title="degreed"><i class="fa fa fa-graduation-cap"></i></a></li>
+
+					</ul>
+
+					<p class="copyright"> Feel free to email me, or visit my GitHub and LinkedIn pages.</p>
+                    <p class="copyright"> Original template accessible at Vlad's <a href="https://github.com/VladislavMoroshan/Django-personal-website">GitGub</a></p>
+					<p class="heart">Made with <span class="fa fa-heart fa-2x animated pulse"></span> in Brno, Czechia 2018</p>
+
+				</div>
+            <!-- .row -->
+			</div>
+
+		</div><!-- .container -->
+
+        <section class="worth-visiting">
+                <h4>Friends worth visiting</h4>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <ul class="worth-visiting">
+                            <li><a href="https://excelexpert.cz/" class="wow fadeInUp" data-wow-delay=".1s" target="_blank" title="kudelka">Jan Kudělka</a> </li>
+                            <li><a href="http://www.standajilek.cz/" class="wow fadeInUp" data-wow-delay=".1s" target="_blank" title="jilek">Standa Jílek</a> </li>
+                            <li><a href = https://www.skolenipowerbi.cz/o-mne/  class="wow fadeInUp" data-wow-delay=".1s" target="_blank" title="mayer">Honza Mayer</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+	</footer>
+
+	<!-- Footer end -->
+
+
+	<!-- Javascript files -->
+
+	<script src="{% static 'mainpage/js/jquery-1.11.1.min.js' %}"></script>
+	<script src="{% static 'mainpage/bootstrap/js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'mainpage/js/jquery.parallax-1.1.3.js' %}"></script>
+	<script src="{% static 'mainpage/js/imagesloaded.pkgd.js' %}"></script>
+	<script src="{% static 'mainpage/js/jquery.sticky.js' %}"></script>
+	<script src="{% static 'mainpage/js/smoothscroll.js' %}"></script>
+	<script src="{% static 'mainpage/js/wow.min.js' %}"></script>
+  <script src="{% static 'mainpage/js/waypoints.min.js' %}"></script>
+  <script src="{% static 'mainpage/js/jquery.cbpQTRotator.js' %}"></script>
+	<script src="{% static 'mainpage/js/custom.js' %}"></script>
+
+</body>
+</html>

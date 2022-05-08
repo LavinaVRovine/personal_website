@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
-from django.views.generic import ListView
+from django.views.generic import ListView, TemplateView
 from django.views.generic.edit import FormView
 from django.contrib.messages.views import SuccessMessageMixin
 
@@ -34,3 +34,6 @@ class ProjectListAndFormView(SuccessMessageMixin, ListView, FormView):
             fail_silently=False
         )
         return super(ProjectListAndFormView, self).form_valid(form)
+
+class TinderView(TemplateView):
+    template_name = 'mainpage/tinder.html'
